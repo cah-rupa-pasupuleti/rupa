@@ -1,0 +1,24 @@
+<channel
+   name="json"
+   guid="4D9A9C26C5FB780629E9AB7BA0991C78"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="json-To-08SKBHAvr0c4wR"
+      commit_id="b2bc4e84062082aeee9d8110347f58b3afa2cf2c"
+      commit_comment="commit">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="9E14734A1D48CF1DEEE32BA4FB9A510B"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_http
+      type="mapper"
+      guid="json-FromHTTP-AL7INEieoldZ3h"
+      commit_id="bc61beaf9af9b2a48fd8a1e794a81ac345440a5f"
+      commit_comment="commit"
+      mapper_url_path="&#x9; http://localhost:6548/&#x9;"/>
+</channel>
